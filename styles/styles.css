@@ -1,3 +1,5 @@
+/* val'acro red: #f30c1a */
+
 html {
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
@@ -179,6 +181,7 @@ a.article:hover {
 
 .navtxt {
     margin: 0 auto;
+    padding-right: 25px;
     color: #fafafa;
 }
 
