@@ -17,6 +17,10 @@
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <!-- Modal -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -36,7 +40,7 @@
             </div>
 
             <ul class="list-unstyled components">
-                <p style="font-size: 14px;">Association de Gym Acrobatique&#013;&#010;Rue lomprez, 59300 Valenciennes</p>
+                <p style="font-size: 14px; color: white;">Association de Gym Acrobatique&#013;&#010;Rue lomprez, 59300 Valenciennes</p>
                 <li>
                     <a href="index.html">Accueil</a>
                 </li>
@@ -74,12 +78,10 @@
                 <div class="col-md-12">
                     <center>
                         <form action="" method="" id="grpmsg">
-                            <select style="width: 60%;">
-                                <option value="" disabled selected>Choix Du (Des) Destinaitaire(s)</option>
-                                <option>Group 1</option>
-                                <option>Group 2</option>
-                                <option>Group 3</option>
-                            </select>
+
+                            <!-- Trigger the modal with a button -->
+                              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal">Choix Du (Des) Destinataire(s)</button>
+
                             <br><br><br>
                             <input type="text" name="subject" placeholder="Sujet" style="width: 60%;">
                             <br><br><br>
@@ -88,12 +90,38 @@
                             <button type="submit" class="btn btn-dark">Envoyer</button>
                         </form>
                     </center>
+                    
                 </div>  
             </div>
         </div>
-
     </div>
 
+    <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div>
+                <center>
+                    <button type="button" class="close" data-dismiss="modal" style="margin-right: 20px;">&times;</button>
+                    <h4>Choix des destinataires</h4>
+                </center>
+            </div>
+            <div class="modal-body">
+                <center>
+                    <input type="checkbox" name="grp1" value="Grp1">&nbsp;&nbsp;Group 1<br><br>
+                    <input type="checkbox" name="grp2" value="Grp2">&nbsp;&nbsp;Group 2<br><br>
+                    <input type="checkbox" name="grp3" value="Grp3">&nbsp;&nbsp;Group 3<br><br>
+                </center>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
     <div class="overlay"></div>
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
