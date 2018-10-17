@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Mon Profil</title>
+    <title>Event</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -21,90 +21,45 @@
 </head>
 
 <body>
+
     <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div id="dismiss">
-                <i class="fas fa-arrow-left"></i>
-            </div>
-
-            <div class="sidebar-header">
-                <br><br><br>
-                <center>
-                    <img src="img/valacro_logo.png" style="height: 150px; width: 150px;">
-                </center>
-            </div>
-
-            <ul class="list-unstyled components">
-                <p style="font-size: 14px;">Association de Gym Acrobatique&#013;&#010;Rue lomprez, 59300 Valenciennes</p>
-                <li>
-                    <a href="index.html">Accueil</a>
-                </li>
-                <li class="active">
-                    <a href="page_myprofile.html">Mon Profil</a>
-                </li>
-                <li>
-                    <a href="page_groupes.html">Groupes et Entraînements</a>
-                </li>
-                <li>
-                    <a href="page_messages.html">Messagerie</a>
-                </li>
-            </ul>
-            <ul style="list-style: none; margin-left: -40px;">
-                <li>
-                    <a href="page_contact.html">Nous Contacter</a>
-                </li>
-                <li>
-                    <a href="page_login.html">Se Déconnecter</a>
-                </li>
-            </ul>
-        </nav>
-
         <!-- Page Content  -->
         <div id="container-fluid">
             <nav class="navbar navbar-dark">
                 <div class="container-fluid">
-                    <button type="button" id="sidebarCollapse" class="btn btn-dark">
-                        <i class="fas fa-align-left"></i>
-                    </button>
-                    <b class="navtxt">Mon Profil</b>
-                </div>
+                    <a href="index.html" class="btn btn-dark">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <b class="navtxt">Event</b>
+		        </div>
             </nav>
         </div>
 
         <div class="container">
             <center>
-                <h2 style="text-align: center;">Visualiser Mes Informations</h2>
-                <p>Vous trouverez sur cette page le nombre d'adhérents inscrits ainsi que les principales informations les concernant.</p>
+                <h2>Fiche Identité de l'enfant</h2>
+                <p>Vous povez modifier une information en cliquant sur l'icone correspondante</p>
+                <br>
+                <img src="img/user.png" style="height: 250px; width: auto;">
+                <br><br>
+                <button class='btn btn-dark'>Sauvegarder ma photo</button>
+                <br><br>
+                <p><b>Nom:</b> Sarmiento</p>
+                <p><b>Prenom:</b> Javier</p>
+                <p><b>Nom:</b> 11/01/1998</p>
+                <p><b>Groupe:</b></p>
+                <br><br>
             </center>
-             <br>
-            <h5>Liste de enfants:</h5>
-            <div class="list-group">
-              <a href="page_enfantInfo.html" class="list-group-item list-group-item-action">
-                <img src="img/user.png" style="height: 25px; width: 25px;"> Jane Doe
-              </a>
-              <a href="page_enfantInfo.html" class="list-group-item list-group-item-action">
-                <img src="img/user.png" style="height: 25px; width: 25px;"> John Doe
-              </a>
-              <a href="page_enfantInfo.html" class="list-group-item list-group-item-action">
-                <img src="img/user.png" style="height: 25px; width: 25px;"> Jake Doe
-              </a>
-              <a href="page_enfantInfo.html" class="list-group-item list-group-item-action">
-                <img src="img/user.png" style="height: 25px; width: 25px;"> Jasper Doe
-              </a>
-            </div>
-            <br><br>
-            <center>
-                <a href="page_addEnfant.html" class="btn btn-dark">Ajouter Enfant</a>
-            </center>
+            <br>
             
         </div>
-        
-        
 
     </div>
 
+    <br><br>
+
     <div class="overlay"></div>
+
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
