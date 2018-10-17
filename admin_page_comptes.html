@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Liste Parents</title>
+    <title>Liste des comptes</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -17,12 +17,6 @@
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
-    <!-- Modal -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -48,7 +42,7 @@
                 <li>
                     <a href="admin_page_adherents_list.html">Liste Adhérents</a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="admin_page_parents_list.html">Liste Parents</a>
                 </li>
                 <li>
@@ -75,37 +69,30 @@
                     <button type="button" id="sidebarCollapse" class="btn btn-dark">
                         <i class="fas fa-align-left"></i>
                     </button>
-                    <b class="navtxt">Liste Parents</b>
-
-                    <div class="dropdown dropleft">
-                      <a class="btn btn-dark" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup  ="true" aria-expanded="false">
-                        <p class="fa fa-ellipsis-h"></p>
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="admin_page_comptes.html">Liste des comptes</a>
-                        <a class="dropdown-item" href="#">Trier par nom</a>
-                        <a class="dropdown-item" href="#">Trier par groupe</a>
-                      </div>
-                    </div>
+                    <b class="navtxt">Liste des comptes</b>    
                 </div>
             </nav>
         </div>
 
         <div class="container">
              <br>
-            <h5>Liste parents:</h5>
+             <center>
+                 <p>Vous trouverez sur cette page le nombre d'adhérents inscrits ainsi que les principales informations les concernant.</p>
+                 <h2>Modifier mes informations</h2>
+             </center>
+             <br>
             <div class="list-group">
               <a href="admin_page_userInfo.html" class="list-group-item list-group-item-action">
-                <img src="img/user.png" style="height: 25px; width: 25px;"> Jane Doe
+                Doe Jane Administrateur
               </a>
               <a href="admin_page_userInfo.html" class="list-group-item list-group-item-action">
-                <img src="img/user.png" style="height: 25px; width: 25px;"> John Doe
+                Nash Steve Coach
               </a>
               <a href="admin_page_userInfo.html" class="list-group-item list-group-item-action">
-                <img src="img/user.png" style="height: 25px; width: 25px;"> Jake Doe
+                Messi Lionel Utilisateur
               </a>
               <a href="admin_page_userInfo.html" class="list-group-item list-group-item-action">
-                <img src="img/user.png" style="height: 25px; width: 25px;"> Jasper Doe
+                Mbappe Kylian Utilisateur
               </a>
             </div>
             <br><br>

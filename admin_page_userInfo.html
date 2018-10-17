@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Liste Parents</title>
+    <title>Identité</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -23,100 +23,58 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
+
     <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div id="dismiss">
-                <i class="fas fa-arrow-left"></i>
-            </div>
-
-            <div class="sidebar-header">
-                <br><br><br>
-                <center>
-                    <img src="img/valacro_logo.png" style="height: 150px; width: 150px;">
-                </center>
-            </div>
-
-            <ul class="list-unstyled components">
-                <p style="font-size: 14px;">Association de Gym Acrobatique&#013;&#010;Rue lomprez, 59300 Valenciennes</p>
-                <li>
-                    <a href="admin_index.html">Accueil</a>
-                </li>
-                <li>
-                    <a href="admin_page_adherents_list.html">Liste Adhérents</a>
-                </li>
-                <li class="active">
-                    <a href="admin_page_parents_list.html">Liste Parents</a>
-                </li>
-                <li>
-                    <a href="admin_page_groupes.html">Groupes et Entraînements</a>
-                </li>
-                <li>
-                    <a href="admin_page_messages.html">Messagerie</a>
-                </li>
-            </ul>
-            <ul style="list-style: none; margin-left: -40px;">
-                <li>
-                    <a href="admin_page_contact.html">Nous Contacter</a>
-                </li>
-                <li>
-                    <a href="page_login.html">Se Déconnecter</a>
-                </li>
-            </ul>
-        </nav>
-
         <!-- Page Content  -->
         <div id="container-fluid">
             <nav class="navbar navbar-dark">
                 <div class="container-fluid">
-                    <button type="button" id="sidebarCollapse" class="btn btn-dark">
-                        <i class="fas fa-align-left"></i>
-                    </button>
-                    <b class="navtxt">Liste Parents</b>
+                    <a href="admin_index.html" class="btn btn-dark">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <b class="navtxt">Adherent</b>
 
                     <div class="dropdown dropleft">
                       <a class="btn btn-dark" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup  ="true" aria-expanded="false">
                         <p class="fa fa-ellipsis-h"></p>
                       </a>
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="admin_page_comptes.html">Liste des comptes</a>
-                        <a class="dropdown-item" href="#">Trier par nom</a>
-                        <a class="dropdown-item" href="#">Trier par groupe</a>
+                        <a class="dropdown-item" href="#">Voir infos compte</a>
+                        <a class="dropdown-item" href="#">Supprimer</a>
+                        <a class="dropdown-item" href="#">Générer PDF</a>
                       </div>
                     </div>
-                </div>
+		        </div>
             </nav>
         </div>
 
         <div class="container">
-             <br>
-            <h5>Liste parents:</h5>
-            <div class="list-group">
-              <a href="admin_page_userInfo.html" class="list-group-item list-group-item-action">
-                <img src="img/user.png" style="height: 25px; width: 25px;"> Jane Doe
-              </a>
-              <a href="admin_page_userInfo.html" class="list-group-item list-group-item-action">
-                <img src="img/user.png" style="height: 25px; width: 25px;"> John Doe
-              </a>
-              <a href="admin_page_userInfo.html" class="list-group-item list-group-item-action">
-                <img src="img/user.png" style="height: 25px; width: 25px;"> Jake Doe
-              </a>
-              <a href="admin_page_userInfo.html" class="list-group-item list-group-item-action">
-                <img src="img/user.png" style="height: 25px; width: 25px;"> Jasper Doe
-              </a>
-            </div>
-            <br><br>
+            <center>
+                <h2>Fiche Identité</h2>
+                <p>Vous povez modifier une information en cliquant sur l'icone correspondante</p>
+                <br>
+                <img src="img/user.png" style="height: 250px; width: auto;">
+                <br><br>
+                <p><b>Nom:</b> Sarmiento</p>
+                <p><b>Prenom:</b> Javier</p>
+                <p><b>Nom:</b> 11/01/1998</p>
+                <p><b>Groupe:</b></p>
+                <br><br>
+            </center>
+            <br>
             
         </div>
-        
-        
 
     </div>
 
+    <br><br>
+
     <div class="overlay"></div>
+
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
