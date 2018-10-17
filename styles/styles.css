@@ -174,3 +174,14 @@ a.article:hover {
 .input {
     width: 80%;
 }
+
+input[type=text],
+input[type=password] {
+    padding: 5px 20px;
+}
+
+.tbox {
+    padding: 5px 20px;
+    resize: none;
+    border-color: #999;
+}
